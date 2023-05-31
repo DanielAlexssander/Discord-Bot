@@ -1,3 +1,4 @@
+const { channel } = require('diagnostics_channel');
 const discord = require('discord.js');
 
 module.exports = {
@@ -22,7 +23,7 @@ module.exports = {
             }
         }
 
-        const ticketChannel = await guild.channels.create({
+        var ticketChannel = await guild.channels.create({
             name: `${ticketChannelName}`,
             type: discord.ChannelType.GuildText,
             //parent: '1053478895766208614',
@@ -36,15 +37,19 @@ module.exports = {
 					id: interaction.guild.roles.everyone,
 					deny: [discord.PermissionFlagsBits.ViewChannel],
                 },
+                {
+					id: '1063905888726954065',
+					allow: [discord.PermissionFlagsBits.SendMessages, discord.PermissionFlagsBits.ViewChannel],
+				},
             ],
         });
 
-
+       
         let ticketOption = '';
-
         if (interaction.values[0] === 'frontEndOption') {
             ticketOption = 'Front-End';
         }
+        
 
         const ticketMenuEmbed = new discord.EmbedBuilder()
             .setAuthor({ iconURL: 'https://media.discordapp.net/attachments/894718530736496671/1063972552797605888/sdadas.png', name: 'WebSite Store 🛒' })
