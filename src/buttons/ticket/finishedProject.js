@@ -34,7 +34,11 @@ module.exports = {
             ticketOption = 'Front-End';
         }
 
-        const userClient = await client.users.fetch(interaction.channel.topic)
+        const idClient = interaction.channel.topic;
+        const userClient = await client.users.fetch(idClient);
+        const userClientMember = guild.members.cache.get(idClient)
+        userClientMember.roles.add('1063906859909644410');
+
         const ProjectsChannel = client.channels.cache.find(channel => channel.id === ProjectsChannelId);
         const embed = new discord.EmbedBuilder()
             .setAuthor({ iconURL: 'https://media.discordapp.net/attachments/894718530736496671/1063972552797605888/sdadas.png', name: 'WebSite Store 🛒' })
