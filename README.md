@@ -45,4 +45,5 @@ E logo depois envia a seguinte mensagem em um canal de projetos finalizados:
 
 ## Bot AFK no canal
 Para que fique explicito que o bot esta online e funcionando, o bot fica AFK na call
+
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/23e6767c-7e27-42a4-8540-6ed32f763034)
