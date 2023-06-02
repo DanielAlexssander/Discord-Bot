@@ -1,4 +1,4 @@
-### Bot completo de 🎫Ticket
+# Bot completo de 🎫Ticket
 Este é o meu bot pessoal do Discord feito por mim com JavaScript. Ele apresenta algumas funcionalidade como: Sistema de Ticket, AFK em call e Reações
 
 ## Mensagem para abrir ticket
