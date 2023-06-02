@@ -43,3 +43,6 @@ Quando se clica no "Projeto Finalizado!" ele apenas encerra o ticket com a segui
 E logo depois envia a seguinte mensagem em um canal de projetos finalizados:
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/fe61af18-2420-4388-b597-c0955286ff60)
 
+## Bot AFK no canal
+Para que fique explicito que o bot esta online e funcionando, o bot fica AFK na call
+![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/23e6767c-7e27-42a4-8540-6ed32f763034)
