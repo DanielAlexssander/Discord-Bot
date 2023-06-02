@@ -6,6 +6,7 @@ Para que esta mensagem seja enviada pelo o bot, é preciso escrever `/ticket`
 
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/5e5c4a4b-b00f-4325-a7fc-ee1a083a9123)
 
+
 Esta mensagem contem um campo com categorias.
 
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/0385b12b-b60c-4665-990d-126e1febb59b)
