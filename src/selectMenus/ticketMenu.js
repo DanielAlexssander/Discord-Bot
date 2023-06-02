@@ -63,6 +63,9 @@ module.exports = {
             ])
             .setThumbnail(interaction.user.displayAvatarURL({ dynamic: true, size: 1024 }))
             .setColor('#00ff15')
+            .setImage('https://cdn.discordapp.com/attachments/894718530736496671/1113249269248446554/standard_1.gif')
+            .setFooter({ text: 'WebSite Store © 2023' })
+            .setTimestamp()
 
         const ticketButtonsPainel = new discord.ActionRowBuilder()
             .addComponents(

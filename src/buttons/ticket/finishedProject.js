@@ -48,6 +48,8 @@ module.exports = {
             .setThumbnail(userClient.displayAvatarURL({ dynamic: true, size: 1024 }))
             .setImage('https://cdn.discordapp.com/attachments/894718530736496671/1112982673426751498/standard.gif')
             .setColor('#069cf3')
+            .setFooter({ text: 'WebSite Store © 2023' })
+            .setTimestamp()
             
         return await ProjectsChannel.send({ embeds: [embed]});
     },

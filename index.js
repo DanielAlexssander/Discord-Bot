@@ -46,8 +46,26 @@ client.on("ready", () => {
   } catch(e) {
     console.log(`❌ Não foi possível entrar no canal [ ${canal.name} ].`)
   }
+  
 
 })
+
+
+setInterval(function () {
+  let canal = client.channels.cache.get("1066848294195707944")
+  
+    try {
+
+      joinVoiceChannel({
+        channelId: canal.id,
+        guildId: canal.guild.id,
+        adapterCreator: canal.guild.voiceAdapterCreator,
+      })
+  
+    } catch(e) {
+      console.log(`❌ Não foi possível entrar no canal [ ${canal.name} ].`)
+    }
+}, 1 * 10000);
 
 const channelReact = "1064084582275743806"
 
