@@ -35,3 +35,11 @@ Nesta mensagem contem dois botoes.
 
 Quando se clica no "Encerrar Ticket" ele apenas encerra o ticket com a seguinte mensagem:
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/bf4321e5-da3a-4587-8e00-5fca7ea1fa60)
+
+
+Quando se clica no "Projeto Finalizado!" ele apenas encerra o ticket com a seguinte mensagem:
+![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/f4a2deda-df39-4aa3-b61b-13e77eb6d90f)
+
+E logo depois envia a seguinte mensagem em um canal de projetos:
+![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/fe61af18-2420-4388-b597-c0955286ff60)
+
