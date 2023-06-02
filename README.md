@@ -26,7 +26,9 @@ A mensagem contém uma marcacao para que chame a atencao do usuario e pedindo as
 "TIPO:" com o nome da categoria clicada.
 
 Nesta mensagem contem dois botoes.
+
 "Projeto Finalizado!" - Para caso o projeto seja finalizado e o cliente tenha ficado satisfeito com o resultado.
+
 "Encerrar Ticket" - Caso o cliente tenha desistido do Projeto.
 
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/8e727ea2-ae0f-4839-9ef0-f0dc18aba51d)
