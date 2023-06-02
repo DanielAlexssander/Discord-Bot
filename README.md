@@ -6,27 +6,26 @@ Para que esta mensagem seja enviada pelo o bot, é preciso escrever `/ticket`
 
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/5e5c4a4b-b00f-4325-a7fc-ee1a083a9123)
 
-
-Esta mensagem contem um campo com categorias.
+Esta mensagem contém um campo com categorias.
 
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/0385b12b-b60c-4665-990d-126e1febb59b)
 
 
 ## Canal criado pelo o bot assim que a categoria é selecionada
-O bot cria um canal com o nome com algumas informacoes
+O bot cria um canal com o nome com algumas informações
 
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/00d567e2-f153-4288-b6fd-7d926b89199b)
 
-comeca com um prefixo de ticket, no meio o nome do usuario que fez a interacao, e por ultimo o nome da categoria clicada.
+começa com um prefixo de ticket, no meio o nome do usuário que fez a interação, e por último o nome da categoria clicada.
 
 ## Mensagem enviada no canal criado
 Assim que o bot cria o canal, ele manda a seguinte mensagem:
 ![image](https://github.com/DanielAlexssander/Ticket-bot-Discord/assets/130486556/c8f622ac-31a3-4bab-a205-3e2431d40b9f)
 
-A mensagem contém uma marcacao para que chame a atencao do usuario e pedindo as informacoes do projeto.
+A mensagem contém uma marcacao para que chame a atenção do usuário e pedindo as informações do projeto.
 "TIPO:" com o nome da categoria clicada.
 
-Nesta mensagem contem dois botoes.
+Nesta mensagem contém dois botões.
 
 "Projeto Finalizado!" - Para caso o projeto seja finalizado e o cliente tenha ficado satisfeito com o resultado.
 
