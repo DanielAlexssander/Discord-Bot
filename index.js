@@ -1,5 +1,7 @@
 require('dotenv').config();
 const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
+const { QuickDB } = require("quick.db")
+const db = new QuickDB()
 
 const client = new Client({
     intents: [
@@ -51,7 +53,7 @@ client.on("ready", () => {
 
   setInterval(function () {
     let canal = client.channels.cache.get("1066848294195707944")
-    
+
     
     if (canal.members.size === 0) {
       try {
@@ -81,3 +83,8 @@ client.on("messageCreate", message => {
     if(channelReact.includes(message.channel.id))
     message.react("✅")
 })
+
+
+
+
+
