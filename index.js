@@ -11,6 +11,7 @@ const client = new Client({
         GatewayIntentBits.GuildBans,
         GatewayIntentBits.GuildMessageReactions,
         GatewayIntentBits.DirectMessages,
+        GatewayIntentBits.GuildVoiceStates,
     ], 
     partials: [
         Partials.Message, 
@@ -46,26 +47,33 @@ client.on("ready", () => {
   } catch(e) {
     console.log(`❌ Não foi possível entrar no canal [ ${canal.name} ].`)
   }
+
+
+  setInterval(function () {
+    let canal = client.channels.cache.get("1066848294195707944")
+    
+    
+    if (canal.members.size === 0) {
+      try {
+  
+        joinVoiceChannel({
+          channelId: canal.id,
+          guildId: canal.guild.id,
+          adapterCreator: canal.guild.voiceAdapterCreator,
+        })
+        console.log(`✅ Entrei no canal de voz [ ${canal.name} ] com sucesso!`)
+    
+      } catch(e) {
+        console.log(`❌ Não foi possível entrar no canal [ ${canal.name} ].`)
+      }
+    }
+  }, 1000);
   
 
 })
 
 
-setInterval(function () {
-  let canal = client.channels.cache.get("1066848294195707944")
-  
-    try {
 
-      joinVoiceChannel({
-        channelId: canal.id,
-        guildId: canal.guild.id,
-        adapterCreator: canal.guild.voiceAdapterCreator,
-      })
-  
-    } catch(e) {
-      console.log(`❌ Não foi possível entrar no canal [ ${canal.name} ].`)
-    }
-}, 1 * 10000);
 
 const channelReact = "1064084582275743806"
 
