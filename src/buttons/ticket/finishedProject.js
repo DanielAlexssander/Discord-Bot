@@ -9,7 +9,7 @@ module.exports = {
     run: async (client, interaction) => {
         const guild = client.guilds.cache.get(interaction.guild.id);
         const guildChannels = guild.channels.cache;
-        if (!interaction.member.permissions.has('Administrator')) return interaction.reply({ content: 'Você não tem permissões para isso.', ephemeral: true });
+        if (!interaction.member.roles.cache.has("1063905888726954065")) return interaction.reply({ content: 'Você não tem permissões para isso.', ephemeral: true });
 
         const sucessEmbed = new discord.EmbedBuilder()
         .setDescription('❌ O ticket será encerrado em **10 Segundos**, Obrigado pela a preferência!')
