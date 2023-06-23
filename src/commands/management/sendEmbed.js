@@ -69,6 +69,8 @@ module.exports = {
     }
   ],
   run: async (client, interaction) => {
+    if (!interaction.member.permissions.has('Administrator')) return interaction.reply({ content: 'Você não tem permissões para isso.', ephemeral: true });
+
     const canal = await interaction.channel
     const setColor = interaction.options.getString("set_color")
     const setTitle = interaction.options.getString("set_title")
@@ -84,7 +86,7 @@ module.exports = {
 
     let embed = new Discord.EmbedBuilder()
           .setTimestamp()
-          .setColor(setColor)
+          .setColor(setColor.charAt(0).toUpperCase() + setColor.slice(1))
           .setTitle(setTitle)
           .setURL(setUrl)
           .setAuthor({ name: setAuthor, iconURL: setAuthorIcon, url: setAuthorUrl })
